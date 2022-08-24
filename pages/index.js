@@ -7,21 +7,27 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className={styles.title}>This is homepage</h1>
-      <p className={styles.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-        architecto, doloribus dignissimos minima aliquam amet neque asperiores
-        dolorum fugit molestias!
-      </p>
-      <p className={styles.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-        architecto, doloribus dignissimos minima aliquam amet neque asperiores
-        dolorum fugit molestias!
-      </p>
-      <Link href="/players/">
-        <a className={styles.btn}>See Player Listing</a>
-      </Link>
-    </div>
+    <>
+      <Head>
+        <title>Players list || Home</title>
+        <meta name="keywords" content="players" />
+      </Head>
+      <div>
+        <h1 className={styles.title}>This is homepage</h1>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          architecto, doloribus dignissimos minima aliquam amet neque asperiores
+          dolorum fugit molestias!
+        </p>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          architecto, doloribus dignissimos minima aliquam amet neque asperiores
+          dolorum fugit molestias!
+        </p>
+        <Link href="/players/">
+          <a className={styles.btn}>See Player Listing</a>
+        </Link>
+      </div>
+    </>
   );
 }
